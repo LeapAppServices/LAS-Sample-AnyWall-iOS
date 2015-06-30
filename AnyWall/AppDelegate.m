@@ -26,10 +26,10 @@ static NSString * const defaultsLocationKey = @"currentLocation";
     // Override point for customization after application launch.
 	
 	// ****************************************************************************
-    // LAS initialization
-#warning Please fill in with your LAS credentials
-	//	[LAS setApplicationId:@"APPLICATION_ID_HERE" clientKey:@"CLIENT_KEY_HERE"];
+	// Uncommit and fill in with your LAS credentials:
 	// ****************************************************************************
+#warning Please fill in with your LAS credentials
+	// [LAS setApplicationId:@"APPLICATION_ID_HERE" clientKey:@"CLIENT_KEY_HERE"];
 	
 	// Grab values from NSUserDefaults:
 	NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
