@@ -167,7 +167,21 @@
 	if (nil == self.locationManager) {
 		self.locationManager = [[CLLocationManager alloc] init];
 	}
-
+	
+	switch ([CLLocationManager authorizationStatus]) {
+		case kCLAuthorizationStatusNotDetermined:
+			if ([self.locationManager respondsToSelector:@selector(requestAlwaysAuthorization)]) {
+				[self.locationManager requestAlwaysAuthorization];
+			}
+			break;
+		case kCLAuthorizationStatusDenied:
+			NSLog(@"Location status denied");
+			return;
+			
+		default:
+			break;
+	}
+	
 	self.locationManager.delegate = self;
 	self.locationManager.desiredAccuracy = kCLLocationAccuracyBest;
 
