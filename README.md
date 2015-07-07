@@ -13,9 +13,9 @@
 
 ## 效果截图
 
-![](../images/1.png)
-![](../images/2.png)
-![](../images/3.png)
+![](docs/images/1.png)
+![](docs/images/2.png)
+![](docs/images/3.png)
 
 ## 如何运行
 
